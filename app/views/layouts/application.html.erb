@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>CoHack</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+!!!
+%html
+  %head
+    %title Co-hack
+    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/application.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
+    /[if IE]
+      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
 
-  <%- if notice %>
-    <div class="notice_wrap">
-      <span class="notice"><%= notice %></span>
-    </div>
-  <%- end %>
-    
-  <%- if alert %>
-    <div class="alert_wrap">
-      <%= alert %>
-    </div>
-  <%- end %>
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
 
-  <%= yield %>
+%body
+  %p{:class=>"notice"}
+    = notice
+  %p{:class=>"alert"}
+    = alert
+  #wrapper
+    #header
+      header div
+    = yield
 
-</body>
-</html>
