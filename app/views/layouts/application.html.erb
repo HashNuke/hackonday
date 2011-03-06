@@ -8,7 +8,19 @@
 </head>
 <body>
 
-<%= yield %>
+  <%- if notice %>
+    <div class="notice_wrap">
+      <span class="notice"><%= notice %></span>
+    </div>
+  <%- end %>
+    
+  <%- if alert %>
+    <div class="alert_wrap">
+      <%= alert %>
+    </div>
+  <%- end %>
+
+  <%= yield %>
 
 </body>
 </html>
