@@ -1,0 +1,21 @@
+<%= form_for(@hackthaon) do |f| %>
+  <% if @hackthaon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hackthaon.errors.count, "error") %> prohibited this hackthaon from being saved:</h2>
+
+      <ul>
+      <% @hackthaon.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
