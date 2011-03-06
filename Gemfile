@@ -13,6 +13,15 @@ gem 'fancy-buttons'
 
 gem 'sqlite3'
 
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'cucumber-rails'
+  gem 'capybara'
+end
+
+
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
