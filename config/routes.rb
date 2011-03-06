@@ -1,6 +1,6 @@
 CoHack::Application.routes.draw do
 
-  get "main/landing"
+  root :to=> "main#landing"
 
   devise_for :users
 
