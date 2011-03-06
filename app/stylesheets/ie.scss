@@ -14,3 +14,9 @@ body.bp {
   // .my-container
   //   text-align: left
 }
+
+// from ie6.scss by fancy-buttons
+a.button, form button {
+  background-image: none !important;
+  &:hover, &:active, &:focus {
+    background-image: none !important; } }
