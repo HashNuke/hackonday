@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+
+  ROLES = %w[admin mod hacker banned]
+  
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable, :lockable and :timeoutable
   devise :database_authenticatable, :registerable,
