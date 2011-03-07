@@ -1,18 +1,18 @@
 require 'spec_helper'
 
-describe "team_memberships/show.html.erb" do
+describe "hackathons/show.html.erb" do
   before(:each) do
-    @team_membership = assign(:team_membership, stub_model(TeamMembership,
-      :team_id => 1,
-      :user_id => 1
+    @hackathon = assign(:hackathon, stub_model(Hackathon,
+      :name => "Name",
+      :description => "Description"
     ))
   end
 
   it "renders attributes in <p>" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    rendered.should match(/1/)
+    rendered.should match(/Name/)
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    rendered.should match(/1/)
+    rendered.should match(/Description/)
   end
 end

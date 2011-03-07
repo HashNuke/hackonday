@@ -1,8 +1,10 @@
 CoHack::Application.routes.draw do
 
+
+
   devise_for :users
   resources :teams
-  resources :hackthaons
+  resources :hackathons
 
   root :to=> "main#landing"
 
