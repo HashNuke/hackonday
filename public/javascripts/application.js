@@ -7,17 +7,15 @@
 $(function () {
   $('#launchcountdown').countdown({
     until: $.countdown.UTCDate(+1, 2011, 3 - 1, 19),
-    format: 'YDHMS',
+    format: 'DHMS',
     layout: '<div id="t7_timer">'+
     '<div id="t7_vals">'+
-    '<div id="t7_y" class="t7_numbs">{ynn}</div>'+
     '<div id="t7_d" class="t7_numbs">{dnnn}</div>'+
     '<div id="t7_h" class="t7_numbs">{hnn}</div>'+
     '<div id="t7_m" class="t7_numbs">{mnn}</div>'+
     '<div id="t7_s" class="t7_numbs">{snn}</div>'+
     '</div>'+
     '<div id="t7_labels">'+
-    '<div id="t7_yl" class="t7_labs">years</div>'+
     '<div id="t7_dl" class="t7_labs">days</div>'+
     '<div id="t7_hl" class="t7_labs">hours</div>'+
     '<div id="t7_ml" class="t7_labs">mins</div>'+
