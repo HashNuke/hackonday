@@ -1,2 +1,10 @@
-<h1>Main#landing</h1>
-<p>Find me in app/views/main/landing.html.erb</p>
+<%= image_tag("logo.png") %>
+
+<h1>A hackathon taking place online: March 19th, 2011!</h1>
+
+<%= form_tag do %>
+  <%= text_field_tag(:email, "Your Email") %>
+  <%= submit_tag("Let us keep you posted", :class => "session_button") %>
+<% end %>
+
+<p>Or follow us on Twitter: <%= link_to "@hackonday", "http://twitter.com/hackonday" %></p>

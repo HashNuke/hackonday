@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Co-hack
+    %title HackOnDay #1
     = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'compiled/application.css', :media => 'screen, projection'
     = stylesheet_link_tag 'compiled/print.css', :media => 'print'
@@ -12,12 +12,13 @@
     = csrf_meta_tag
 
 %body
-  landing page layout
   #wrapper
-    %p{:class=>"notice"}
-      = notice
-    %p{:class=>"alert"}
-      = alert
+    #main
+      %p{:class=>"notice"}
+        = notice
+      %p{:class=>"alert"}
+        = alert
+      #content
 
-    = yield
+        = yield
 
