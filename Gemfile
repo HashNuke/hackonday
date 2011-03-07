@@ -7,6 +7,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'compass'
 gem 'fancy-buttons'
+gem 'cancan'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
