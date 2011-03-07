@@ -4,9 +4,11 @@
 
 <div id="launchcountdown"></div>
 
-<%= form_tag do %>
-  <%= text_field_tag(:email, "Your Email") %>
-  <%= submit_tag("Let us keep you posted", :class => "session_button") %>
+<% if false %>
+  <%= form_tag do %>
+    <%= text_field_tag(:email, "Your Email") %>
+    <%= submit_tag("Let us keep you posted", :class => "session_button") %>
+  <% end %>
 <% end %>
 
-<p>Or follow us on Twitter: <%= link_to "@hackonday", "http://twitter.com/hackonday" %></p>
+<p>Follow us on Twitter: <%= link_to "@hackonday", "http://twitter.com/hackonday" %></p>
