@@ -1,4 +1,7 @@
 class HackthaonsController < ApplicationController
+
+  before_filter :authenticate_user!
+  
   # GET /hackthaons
   # GET /hackthaons.xml
   def index

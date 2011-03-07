@@ -1,4 +1,7 @@
 class TeamMembershipsController < ApplicationController
+
+  before_filter :authenticate_user!
+  
   # GET /team_memberships
   # GET /team_memberships.xml
   def index
