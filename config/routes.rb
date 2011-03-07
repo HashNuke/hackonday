@@ -1,14 +1,10 @@
 CoHack::Application.routes.draw do
 
-  resources :team_memberships
-
+  devise_for :users
   resources :teams
-
   resources :hackthaons
 
   root :to=> "main#landing"
-
-  devise_for :users
 
   as :user do
     get "/login" => "devise/sessions#new"
