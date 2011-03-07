@@ -41,12 +41,13 @@ code {
     background: #fff;
     margin: 20px;
     padding: 20px;
-    text-align: center;
+    p, form {
+        padding: 40px 0 10px 0;
+    }
 }
 
-#content p,
-#content form {
-  padding: 40px 0 10px 0;
+.landing_content{
+    text-align: center;
 }
 
 /* Countdown Timer, ty: http://tenseveninteractive.com/content/jquery-countdown-background-and-overlay */
