@@ -5,9 +5,9 @@ class Ability
 
     @user = user || User.new # for guest
 
-    if @user.role? "admin"
+    if @user.role == "admin"
       can :manage, :all
-    elsif @user.role? "hacker"
+    elsif @user.role == "hacker"
       can :read, Hackathon
       can :manage, Team
     else
@@ -15,5 +15,4 @@ class Ability
       can :read, Team
     end
   end
- 
 end
