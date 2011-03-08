@@ -1,6 +1,6 @@
 class InviteRequestsController < ApplicationController
 
-  before_filter :authenticate_user!, :except=>[:new, :create]
+  before_filter :authenticate_user!, :except=>[:create]
   load_and_authorize_resource
   
   # GET /invite_requests
