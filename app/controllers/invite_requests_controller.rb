@@ -1,6 +1,6 @@
 class InviteRequestsController < ApplicationController
 
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :except=>[:new, :create]
   load_and_authorize_resource
   
   # GET /invite_requests
@@ -48,11 +48,13 @@ class InviteRequestsController < ApplicationController
 
     respond_to do |format|
       if @invite_request.save
-        format.html { redirect_to(@invite_request, :notice => 'Invite request was successfully created.') }
+        format.html { redirect_to(root_url, :notice => 'Invite request was successfully created.') }
         format.xml  { render :xml => @invite_request, :status => :created, :location => @invite_request }
+        format.js {render :json => "success"}
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @invite_request.errors, :status => :unprocessable_entity }
+        format.js {render :json => "error", :status => :unprocessable_entity}
       end
     end
   end
