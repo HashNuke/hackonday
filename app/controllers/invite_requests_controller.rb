@@ -54,7 +54,7 @@ class InviteRequestsController < ApplicationController
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @invite_request.errors, :status => :unprocessable_entity }
-        format.js {render :json => "error", :status => :unprocessable_entity}
+        format.js {render :json => @invite_request.errors, :status => :unprocessable_entity}
       end
     end
   end
