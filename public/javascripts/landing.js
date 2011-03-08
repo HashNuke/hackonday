@@ -4,7 +4,7 @@ $(document).ready(function(){
         if(xhr.responseText != 'undefined') {
           console.log(xhr.responseText);
           var response = jQuery.parseJSON(xhr.responseText);
-          $("#formreply").html("Sorry, " + response.email);
+          $("#formreply").html("Oops! " + response.email);
         } else {
           $("#formreply").html("Sorry, some error occured. Please try again.");
         }
