@@ -6,7 +6,7 @@
 // http://tenseveninteractive.com/content/jquery-countdown-background-and-overlay
 $(function () {
   $('#launchcountdown').countdown({
-    until: $.countdown.UTCDate(+1, 2011, 3 - 1, 19),
+    until: $.countdown.UTCDate(-8, 2011, 3 - 1, 19, 9),
     format: 'DHMS',
     layout: '<div id="t7_timer">'+
     '<div id="t7_vals">'+
