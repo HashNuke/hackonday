@@ -2,6 +2,8 @@ CoHack::Application.routes.draw do
 
 
 
+  resources :invite_requests
+
   devise_for :users
   resources :teams
   resources :hackathons
