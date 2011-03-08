@@ -14,8 +14,10 @@
 
 <div id="launchcountdown"></div>
 
+
 <%= form_for(@invite_request, :remote=> true, :html=>{:'data-type'=>'html', :id=>'notification_form'}) do |f| %>
+<div id="formreply"></div>
   <%= f.text_field :email %> <%= f.submit :value=>"Notify me", :class=>"notify_button" %>
 <% end %>
 
-<div id="formreply"></div>
+
