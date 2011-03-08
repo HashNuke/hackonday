@@ -10,6 +10,9 @@ CoHack::Application.routes.draw do
 
   root :to=> "main#landing"
 
+  #TODO delete this secret url later
+  match "/uc"=>"main#uc"
+  
   as :user do
     get "/login" => "devise/sessions#new"
     get "/logout" => "devise/sessions#destroy"

@@ -4,4 +4,8 @@ class MainController < ApplicationController
     render :layout=>'landing'
   end
 
+  def uc
+    render :text=>InviteRequest.count
+  end
+  
 end
