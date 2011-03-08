@@ -12,6 +12,7 @@ class Ability
       can :manage, Team
     else
       can :read, Hackathon
+      can :create, InviteRequest
       can :read, Team
     end
   end

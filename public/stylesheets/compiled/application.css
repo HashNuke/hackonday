@@ -60,8 +60,13 @@ a img {
 }
 
 /* incase an inverted custom gradient isn't specified */
+<<<<<<< HEAD
 /* line 177, ../../../../../.rvm/gems/ruby-1.8.7-p302@co-hack/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class, .session_button {
+=======
+/* line 177, ../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class, .session_button, .notify_button {
+>>>>>>> dev
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/images/button_bg.png') repeat-x bottom left;
   margin: 0;
@@ -73,6 +78,7 @@ a img {
   border-style: solid;
   font-weight: bold;
 }
+<<<<<<< HEAD
 /* line 165, ../../../../../.rvm/gems/ruby-1.8.7-p302@co-hack/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class::-moz-focus-inner, .session_button::-moz-focus-inner {
   border: none;
@@ -80,6 +86,15 @@ a img {
 }
 /* line 168, ../../../../../.rvm/gems/ruby-1.8.7-p302@co-hack/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class:focus, .session_button:focus {
+=======
+/* line 165, ../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class::-moz-focus-inner, .session_button::-moz-focus-inner, .notify_button::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+/* line 168, ../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class:focus, .session_button:focus, .notify_button:focus {
+>>>>>>> dev
   outline: none;
 }
 
@@ -168,6 +183,70 @@ a img {
 }
 
 /* line 16, ../../../app/stylesheets/application.scss */
+.notify_button {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: #aaff00;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #dceeba), color-stop(10%, #b8db70), color-stop(50%, #90c030), color-stop(50%, #87b42d), color-stop(100%, #a1d043));
+  background-image: -moz-linear-gradient(top, #dceeba 0%, #b8db70 10%, #90c030 50%, #87b42d 50%, #a1d043 100%);
+  background-image: linear-gradient(top, #dceeba 0%, #b8db70 10%, #90c030 50%, #87b42d 50%, #a1d043 100%);
+  border-color: #6b8f24;
+  text-shadow: #558000 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 116, ../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.notify_button, .notify_button:visited {
+  color: white;
+}
+/* line 31, ../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.notify_button:hover, .notify_button:focus {
+  background-color: #a0f000;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #d6ebad), color-stop(10%, #b1d864), color-stop(50%, #87b42d), color-stop(50%, #7da72a), color-stop(100%, #9bcd37));
+  background-image: -moz-linear-gradient(top, #d6ebad 0%, #b1d864 10%, #87b42d 50%, #7da72a 50%, #9bcd37 100%);
+  background-image: linear-gradient(top, #d6ebad 0%, #b1d864 10%, #87b42d 50%, #7da72a 50%, #9bcd37 100%);
+  border-color: #628321;
+  text-shadow: #4b7000 0px 1px 1px;
+}
+/* line 116, ../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.notify_button:hover, .notify_button:hover:visited, .notify_button:focus, .notify_button:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.notify_button:active {
+  background-color: #96e000;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #87b42d), color-stop(30%, #8dbc2f), color-stop(50%, #81ab2b), color-stop(50%, #779f28), color-stop(100%, #9dce3b));
+  background-image: -moz-linear-gradient(top, #87b42d 0%, #8dbc2f 30%, #81ab2b 50%, #779f28 50%, #9dce3b 100%);
+  background-image: linear-gradient(top, #87b42d 0%, #8dbc2f 30%, #81ab2b 50%, #779f28 50%, #9dce3b 100%);
+  border-color: #59761e;
+  text-shadow: #416100 0px -1px -1px;
+  -moz-box-shadow: #6b8f24 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #6b8f24 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #6b8f24 0 0.08em 0.1em 1px inset;
+  box-shadow: #6b8f24 0 0.08em 0.1em 1px inset;
+}
+/* line 116, ../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.notify_button:active, .notify_button:active:visited {
+  color: white;
+}
+
+/* line 20, ../../../app/stylesheets/application.scss */
 #footer {
   display: inline;
   float: left;
@@ -179,25 +258,25 @@ a img {
   overflow-x: hidden;
 }
 
-/* line 20, ../../../app/stylesheets/application.scss */
+/* line 24, ../../../app/stylesheets/application.scss */
 body {
   font-family: Helvetica, Arial;
   background: #ffd65e url("/images/background.png") top left repeat-x fixed;
 }
 
-/* line 25, ../../../app/stylesheets/application.scss */
+/* line 29, ../../../app/stylesheets/application.scss */
 h1 {
   font-size: 100%;
   font-weight: bold;
 }
 
-/* line 31, ../../../app/stylesheets/application.scss */
+/* line 35, ../../../app/stylesheets/application.scss */
 pre,
 code {
   font-family: monospace, sans-serif;
 }
 
-/* line 35, ../../../app/stylesheets/application.scss */
+/* line 39, ../../../app/stylesheets/application.scss */
 #main {
   display: inline;
   float: left;
@@ -209,7 +288,7 @@ code {
   overflow-x: hidden;
 }
 
-/* line 39, ../../../app/stylesheets/application.scss */
+/* line 43, ../../../app/stylesheets/application.scss */
 #content {
   -moz-box-shadow: gray 2px 2px 10px 0;
   -webkit-box-shadow: gray 2px 2px 10px 0;
@@ -219,18 +298,18 @@ code {
   margin: 20px;
   padding: 20px;
 }
-/* line 44, ../../../app/stylesheets/application.scss */
+/* line 48, ../../../app/stylesheets/application.scss */
 #content p, #content form {
   padding: 40px 0 10px 0;
 }
 
-/* line 49, ../../../app/stylesheets/application.scss */
+/* line 53, ../../../app/stylesheets/application.scss */
 .landing_content {
   text-align: center;
 }
 
 /* Countdown Timer, ty: http://tenseveninteractive.com/content/jquery-countdown-background-and-overlay */
-/* line 54, ../../../app/stylesheets/application.scss */
+/* line 58, ../../../app/stylesheets/application.scss */
 #launchcountdown {
   width: 231px;
   height: 55px;
@@ -239,14 +318,14 @@ code {
   padding-top: 40px;
 }
 
-/* line 62, ../../../app/stylesheets/application.scss */
+/* line 66, ../../../app/stylesheets/application.scss */
 #t7_timer {
   width: 231px;
   height: 55px;
   position: relative;
 }
 
-/* line 68, ../../../app/stylesheets/application.scss */
+/* line 72, ../../../app/stylesheets/application.scss */
 #t7_timer_over {
   width: 300px;
   height: 55px;
@@ -259,14 +338,14 @@ code {
   padding: 0px;
 }
 
-/* line 80, ../../../app/stylesheets/application.scss */
+/* line 84, ../../../app/stylesheets/application.scss */
 #t7_vals {
   width: 100%;
   clear: both;
   margin: 0px auto;
 }
 
-/* line 86, ../../../app/stylesheets/application.scss */
+/* line 90, ../../../app/stylesheets/application.scss */
 .t7_numbs {
   font-size: 28px;
   font-family: Arial, sans-serif;
@@ -275,7 +354,7 @@ code {
   color: #ffffff;
 }
 
-/* line 106, ../../../app/stylesheets/application.scss */
+/* line 110, ../../../app/stylesheets/application.scss */
 #t7_d {
   background-image: url(/images/Countdown3.png);
   background-repeat: no-repeat;
@@ -288,7 +367,7 @@ code {
   letter-spacing: 7px;
 }
 
-/* line 118, ../../../app/stylesheets/application.scss */
+/* line 122, ../../../app/stylesheets/application.scss */
 #t7_h {
   background-image: url(/images/Countdown2.png);
   background-repeat: no-repeat;
@@ -301,7 +380,7 @@ code {
   letter-spacing: 7px;
 }
 
-/* line 130, ../../../app/stylesheets/application.scss */
+/* line 134, ../../../app/stylesheets/application.scss */
 #t7_m {
   background-image: url(/images/Countdown2.png);
   background-repeat: no-repeat;
@@ -314,7 +393,7 @@ code {
   letter-spacing: 7px;
 }
 
-/* line 142, ../../../app/stylesheets/application.scss */
+/* line 146, ../../../app/stylesheets/application.scss */
 #t7_s {
   background-image: url(/images/Countdown2-nc.png);
   background-repeat: no-repeat;
@@ -327,14 +406,14 @@ code {
   letter-spacing: 7px;
 }
 
-/* line 154, ../../../app/stylesheets/application.scss */
+/* line 158, ../../../app/stylesheets/application.scss */
 #t7_labels {
   width: 100%;
   clear: both;
   margin: 0px auto;
 }
 
-/* line 160, ../../../app/stylesheets/application.scss */
+/* line 164, ../../../app/stylesheets/application.scss */
 .t7_labs {
   font-size: 9px;
   font-family: Helvetia, Arial, sans-serif;
@@ -343,7 +422,7 @@ code {
   color: #000000;
 }
 
-/* line 168, ../../../app/stylesheets/application.scss */
+/* line 172, ../../../app/stylesheets/application.scss */
 #t7_dl {
   float: left;
   width: 74px;
@@ -352,7 +431,7 @@ code {
   margin: 0px;
 }
 
-/* line 176, ../../../app/stylesheets/application.scss */
+/* line 180, ../../../app/stylesheets/application.scss */
 #t7_hl {
   float: left;
   width: 54px;
@@ -361,7 +440,7 @@ code {
   margin: 0px;
 }
 
-/* line 184, ../../../app/stylesheets/application.scss */
+/* line 188, ../../../app/stylesheets/application.scss */
 #t7_ml {
   float: left;
   width: 55px;
@@ -370,7 +449,7 @@ code {
   margin: 0px;
 }
 
-/* line 192, ../../../app/stylesheets/application.scss */
+/* line 196, ../../../app/stylesheets/application.scss */
 #t7_sl {
   float: left;
   width: 46px;
