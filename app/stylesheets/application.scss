@@ -24,6 +24,17 @@ h1.intro {
     font-weight: bold;
 }
 
+
+a,
+a:visited {
+    color: #0066cc;
+}
+
+a:hover,
+a:active {
+  color: #855CFF;
+}
+
 pre,
 code {
     font-family: monospace, sans-serif;
@@ -38,9 +49,6 @@ code {
     background: #fff;
     margin: 20px;
     padding: 20px;
-    a {
-      color: #0066cc;
-    }
     
     #header {
        text-align: center;
@@ -55,7 +63,7 @@ code {
 #footer {
     @include column(12, true);
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 80%;
     padding-bottom: 10px;
 }
