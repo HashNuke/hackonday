@@ -42,19 +42,27 @@ class InviteRequestsController < ApplicationController
   end
 
   # POST /invite_requests
-  # POST /invite_requests.xml
+  # POST /invite_requests.xmly
   def create
     @invite_request = InviteRequest.new(params[:invite_request])
 
     respond_to do |format|
       if @invite_request.save
-        format.html { redirect_to(root_url, :notice => 'Invite request was successfully created.') }
-        format.xml  { render :xml => @invite_request, :status => :created, :location => @invite_request }
-        format.js {render :json => "success"}
+        format.html do
+          if request.xhr?
+            render :json => "success"
+          else
+            redirect_to(root_url, :notice => 'Invite request was successfully created.')
+          end
+        end
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @invite_request.errors, :status => :unprocessable_entity }
-        format.js {render :json => @invite_request.errors, :status => :unprocessable_entity}
+        format.html do
+          if request.xhr?
+            render :json => @invite_request.errors, :status => :unprocessable_entity
+          else
+            render :action => "new"
+          end
+        end
       end
     end
   end

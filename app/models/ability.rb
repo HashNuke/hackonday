@@ -9,6 +9,7 @@ class Ability
       can :manage, :all
     elsif @user.role == "hacker"
       can :read, Hackathon
+      can :create, InviteRequest
       can :manage, Team
     else
       can :read, Hackathon
