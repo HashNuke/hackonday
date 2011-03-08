@@ -9,12 +9,12 @@
     @include column(12, true);
 }
 
-.session_button {
-    @include fancy-button(#ccc, 14px, 2px);
-}
-
 .notify_button {
     @include fancy-button(#9c3, 14px, 2px);
+}
+
+.session_button {
+    @include fancy-button(#ccc, 14px, 2px);
 }
 
 #footer {
