@@ -11,23 +11,23 @@
     = javascript_include_tag :defaults
     = csrf_meta_tag
 
-%body
-  %p{:class=>"notice"}
-    = notice
-  %p{:class=>"alert"}
-    = alert
-  #wrapper
-    #main
+  %body
+    %p{:class=>"notice"}
+      = notice
+    %p{:class=>"alert"}
+      = alert
+    #wrapper
+      #main
       
-      #content
-        #header
-          = image_tag("logo.png")
-        = yield
-      #footer
-        %i
-        the hackathon with a twist
-        by
-        = link_to "@thejessor", "http://twitter.com/thejessor"
-        and
-        = link_to "@akashmanohar", "http://twitter.com/akashmanohar"
+        #content
+          #header
+            = image_tag("logo.png")
+          = yield
+          #footer
+            %i
+              the hackathon with a twist
+            by
+            = link_to "@thejessor", "http://twitter.com/thejessor"
+            and
+            = link_to "@akashmanohar", "http://twitter.com/akashmanohar"
 

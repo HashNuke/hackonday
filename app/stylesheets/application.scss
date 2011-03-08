@@ -18,12 +18,9 @@ body {
     background: #ffd65e url('/images/background.png') top left repeat-x fixed;
 }
 
-h1 {
+h1.intro {
+    margin-top: 10px;
     font-size: 100%;
-    font-weight: bold;
-}
-
-.intro {
     font-weight: bold;
 }
 
