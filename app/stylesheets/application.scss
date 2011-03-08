@@ -54,6 +54,20 @@ code {
     text-align: center;
 }
 
+#formreply {
+    margin-top: 40px;
+}
+
+#formreply.success {
+    border: 1px dotted #89B62F;
+    padding: 5px;
+}
+
+#formreply.error {
+    border: 1px dotted #B62F37;
+    padding: 5px;
+}
+
 /* Countdown Timer, ty: http://tenseveninteractive.com/content/jquery-countdown-background-and-overlay */
 #launchcountdown {
     width: 231px;
