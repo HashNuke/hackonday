@@ -12,14 +12,21 @@
     = csrf_meta_tag
     = yield :header
 
-%body
-  #wrapper
-    #main
-      %p{:class=>"notice"}
-        = notice
-      %p{:class=>"alert"}
-        = alert
-      %div{:id=>"content", :class=>"landing_content"}
-
-        = yield
+  %body
+    #wrapper
+      #main
+        %p{:class=>"notice"}
+          = notice
+        %p{:class=>"alert"}
+          = alert
+        %div{:id=>"content", :class=>"landing_content"}
+          = yield
+    #footer 
+      %i
+        the hackathon with a twist
+      by
+      = link_to "@thejessor", "http://twitter.com/thejessor"
+      and
+      = link_to "@akashmanohar", "http://twitter.com/akashmanohar"
+      
 

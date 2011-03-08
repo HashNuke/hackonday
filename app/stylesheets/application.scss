@@ -5,21 +5,12 @@
     @include container;
 }
 
-#header {
-    text-align: center;
-    @include column(12, true);
-}
-
 .notify_button {
     @include fancy-button(#9c3, 14px, 2px);
 }
 
 .session_button {
     @include fancy-button(#ccc, 14px, 2px);
-}
-
-#footer {
-    @include column(12, true);
 }
 
 body {
@@ -29,6 +20,10 @@ body {
 
 h1 {
     font-size: 100%;
+    font-weight: bold;
+}
+
+.intro {
     font-weight: bold;
 }
 
@@ -46,9 +41,25 @@ code {
     background: #fff;
     margin: 20px;
     padding: 20px;
+    a {
+      color: #0066cc;
+    }
+    
+    #header {
+       text-align: center;
+       @include column(12, true);
+    }
     p, form {
         padding: 40px 0 10px 0;
     }
+}
+
+#footer {
+    @include column(12, true);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 80%;
+    
 }
 
 .landing_content{
@@ -95,18 +106,6 @@ code {
     text-align: left;
     color: #ffffff;
 }
-
-//#t7_y {
-    //background-image: url(/images/Countdown2.png);
-    //background-repeat: no-repeat;
-    //float:left;
-    //width: 48px;
-    //height:35px;
-    //background-color:#ffffff;
-    //padding: 0px 0px 0px 3px;
-    //margin: 1px;
-    //letter-spacing: 7px;
-//}
 
 #t7_d {
     background-image: url(/images/Countdown3.png);
@@ -201,4 +200,3 @@ code {
     padding: 0px;
     margin: 0px;
 }
-

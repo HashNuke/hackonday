@@ -4,8 +4,14 @@
 
 
 <%= image_tag("logo.png") %>
+<br/>
 
-<h1>A hackathon taking place online: March 19th, 2011!</h1>
+<%= link_to "@hackonday", "http://twitter.com/hackonday" %> or <%= link_to "hackline@hackonday.com", "mailto:hackline@hackonday.com" %>
+
+<p class="intro">
+  first live streamed online hackathon on March 19th, 2011, 9:00am PST
+</p>
+
 
 <div id="launchcountdown"></div>
 
@@ -13,4 +19,4 @@
   <%= f.text_field :email %> <%= f.submit :value=>"Notify me", :class=>"notify_button" %>
 <% end %>
 
-<p><%= link_to "@hackonday", "http://twitter.com/hackonday" %> or <%= link_to "hackline@hackonday.com", "mailto:hackline@hackonday.com" %></p>
+
