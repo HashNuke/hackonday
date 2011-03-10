@@ -18,12 +18,21 @@ body {
     background: #ffd65e url('/images/background.png') top left repeat-x fixed;
 }
 
+h1 {
+    font-size: 120%;
+}
+
 h1.intro {
     margin-top: 20px;
     font-size: 100%;
     font-weight: bold;
 }
 
+h2 {
+    margin-top: 40px;
+    font-size: 100%;
+    font-weight: bold;
+}
 
 a,
 a:visited {

@@ -1,6 +1,6 @@
 CoHack::Application.routes.draw do
 
-
+  get "pages/rules"
 
   resources :invite_requests
 
