@@ -19,7 +19,7 @@ We will take the excitement of creating an app from scratch in just one day and 
 
 <%= form_for(@invite_request, :remote=> true, :html=>{:'data-type'=>'html', :id=>'notification_form'}) do |f| %>
 <div id="forminfo">Interested?</div>
-  <%= f.text_field :email %> <%= f.submit :value=>"Notify me", :class=>"notify_button" %>
+  <%= f.text_field :email, :value=>"Your Email" %> <%= f.submit :value=>"Notify me", :class=>"notify_button" %>
 <% end %>
 
 <%= link_to "@hackonday", "http://twitter.com/hackonday" %>
