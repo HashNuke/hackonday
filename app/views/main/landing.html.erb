@@ -8,7 +8,11 @@
 
 <%= link_to "@hackonday", "http://twitter.com/hackonday" %>
 
-<h1 class="intro">The first live-streamed online hackathon</h1>
+<h1 class="intro">Hack On will be the first live-streamed online hackathon.</h1>
+
+<p>Until now hackathons were limited to one physical location.<br />
+We will take the excitement of creating an app from scratch in just one day and put it online.<br />
+<%= link_to "See the rules.", rules_path %>.</p>
 
 <p>March 19th 2011 @ 9am GMT</p>
 
@@ -16,7 +20,7 @@
 
 
 <%= form_for(@invite_request, :remote=> true, :html=>{:'data-type'=>'html', :id=>'notification_form'}) do |f| %>
-<div id="formreply"></div>
+<div id="forminfo">Interested?</div>
   <%= f.text_field :email %> <%= f.submit :value=>"Notify me", :class=>"notify_button" %>
 <% end %>
 

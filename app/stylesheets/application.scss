@@ -66,6 +66,7 @@ code {
 
     p, form {
         padding: 40px 0 10px 0;
+        line-height: 120%;
     }
 }
 
@@ -81,12 +82,12 @@ code {
     text-align: center;
 }
 
-#formreply {
+#forminfo {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#formreply.success {
+#forminfo.success {
     border: 1px dotted #89B62F;
     color: #89B62F;
     font-weight: bold;
@@ -94,7 +95,7 @@ code {
     padding: 5px;
 }
 
-#formreply.error {
+#forminfo.error {
     border: 1px dotted #B62F37;
     color: #B62F37;
     font-weight: bold;

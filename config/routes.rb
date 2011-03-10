@@ -1,6 +1,7 @@
 CoHack::Application.routes.draw do
 
   get "pages/rules"
+  match '/rules', :to => 'pages#rules'
 
   resources :invite_requests
 

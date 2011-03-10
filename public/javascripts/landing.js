@@ -4,17 +4,17 @@ $(document).ready(function(){
         if(xhr.responseText != 'undefined') {
           console.log(xhr.responseText);
           var response = jQuery.parseJSON(xhr.responseText);
-          $("#formreply").html("Oops! " + response.email);
+          $("#forminfo").html("Oops, " + response.email);
         } else {
-          $("#formreply").html("Sorry, some error occured. Please try again.");
+          $("#forminfo").html("Sorry, some error occured. Please try again.");
         }
-        $("#formreply").removeClass("success").addClass("error");
+        $("#forminfo").removeClass("success").addClass("error");
     });
 
     $("#notification_form").bind("ajax:success", function(e, data, status, xhr){
         console.log("success");
-        $("#formreply").html("Thanks! You'll hear from us soon.");
-        $("#formreply").removeClass("error").addClass("success");
+        $("#forminfo").html("Thanks! You'll hear from us soon.");
+        $("#forminfo").removeClass("error").addClass("success");
     });
 
     // http://tenseveninteractive.com/content/jquery-countdown-background-and-overlay
