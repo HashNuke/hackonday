@@ -11,8 +11,9 @@ CoHack::Application.routes.draw do
 
   root :to=> "main#landing"
 
-  #TODO delete this secret url later
-  match "/uc"=>"main#uc"
+  match "/auth/:provider/callback" => "sessions#create"
+  match "/oauth_signout" => "sessions#destroy", :as => :oauth_signout
+  match "/oauth_login" => "main#login", :as => :oauth_login
   
   as :user do
     get "/login" => "devise/sessions#new"

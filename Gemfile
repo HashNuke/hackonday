@@ -8,6 +8,8 @@ gem 'haml'
 gem 'compass'
 gem 'fancy-buttons'
 gem 'cancan'
+gem 'omniauth'
+gem 'oa-oauth'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
