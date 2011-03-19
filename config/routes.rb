@@ -1,5 +1,6 @@
 CoHack::Application.routes.draw do
 
+  get "main/home"
   get "pages/rules"
   match '/rules', :to => 'pages#rules'
 
@@ -10,14 +11,9 @@ CoHack::Application.routes.draw do
   root :to=> "main#landing"
 
   match "/auth/:provider/callback" => "sessions#create"
-  match "/oauth_signout" => "sessions#destroy", :as => :oauth_signout
+  match "/oauth_logout" => "sessions#destroy", :as => :oauth_logout
   match "/oauth_login" => "main#login", :as => :oauth_login
   
-  as :user do
-    get "/login" => "devise/sessions#new"
-    get "/logout" => "devise/sessions#destroy"
-  end
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

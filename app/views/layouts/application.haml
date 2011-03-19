@@ -14,8 +14,13 @@
   %body
     %p{:class=>"notice"}
       = notice
-    %p{:class=>"alert"}
-      = alert
+    - if current_user
+      = current_user.name
+      \-
+      = link_to "Logout", oauth_logout_path
+    - else
+      = link_to "Login with Github", "/auth/github", :class=>"login_link"
+
     #wrapper
       #main
         #content

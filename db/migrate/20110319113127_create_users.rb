@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.text :uid
       t.text :name
       t.text :email
-      t.text :role
+      t.text :role, :default=>"hacker"
 
       t.timestamps
     end
