@@ -4,8 +4,6 @@ CoHack::Application.routes.draw do
   match '/rules', :to => 'pages#rules'
 
   resources :invite_requests
-
-  devise_for :users
   resources :teams
   resources :hackathons
 
