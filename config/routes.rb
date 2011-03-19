@@ -1,18 +1,17 @@
 CoHack::Application.routes.draw do
 
-  get "main/home"
-  get "pages/rules"
+  root :to=> "main#landing"
+  
   match '/rules', :to => 'pages#rules'
 
   resources :invite_requests
   resources :teams
   resources :hackathons
 
-  root :to=> "main#landing"
-
   match "/auth/:provider/callback" => "sessions#create"
   match "/oauth_logout" => "sessions#destroy", :as => :oauth_logout
   match "/oauth_login" => "main#login", :as => :oauth_login
+  match "/home" => "main#home", :as => :home_url
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -69,5 +68,5 @@ CoHack::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+  match ':controller(/:action(/:id(.:format)))'
 end

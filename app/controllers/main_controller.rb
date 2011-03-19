@@ -2,6 +2,10 @@ class MainController < ApplicationController
   
   before_filter :current_user, :only =>[:home]
   load_and_authorize_resource
+
+  def index
+  end
+  
   
   def landing
     @invite_request = InviteRequest.new
@@ -15,5 +19,10 @@ class MainController < ApplicationController
   def home
     
   end
+
+  def login
+    
+  end
+  
   
 end
